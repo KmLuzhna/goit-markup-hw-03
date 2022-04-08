@@ -312,8 +312,7 @@
   .projects-item {
     margin-top: 30px;
     margin-left: 30px;
-    /*flex-basis: calc((100% - 90px) / 3);*/
-    flex-basis: ((100%-60)/3);
+    flex-basis: calc((100% - 90px) / 3);
   }
   .projects-content {
     padding: 20px 24px;
