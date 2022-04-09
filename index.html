@@ -33,16 +33,16 @@
     </header>
     <main class="page-main">
         <!--Шапка-->
-        <section class="main-section section">
+        <section class="main-section">
             <div class="container">
                 <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
                 <button class="main-button" type="button">Заказать услугу</button>
             </div>
         </section>
         <!--Особенности-->
-        <section class="feature section">
+        <section class="section">
             <div class="container">
-                <h2 style="display: none;">Наши преимущества</h2>
+                <h2 class="visually-hidden">Наши преимущества</h2>
                 <ul class="feature-list">
                     <li class="feature-list-item">
                         <h3 class="feature-list-title">Внимание к деталям</h3>
@@ -86,23 +86,31 @@
                 <ul class="team-list">
                     <li class="team-list-item">
                         <img src="./images/Igor_Demyanenko.jpg" alt="Игорь Демьяненко" width="270" height="260">
-                        <h3 class="team-list-title">Игорь Демьяненко</h3>
-                        <p class="team-list-text">Product Designer</p>
+                        <div class="team-info">
+                            <h3 class="team-list-title">Игорь Демьяненко</h3>
+                            <p class="team-list-text">Product Designer</p>
+                        </div>
                     </li>
                     <li class="team-list-item">
                         <img src="./images/Olga_Repina.jpg" alt="Ольга Репина" width="270" height="260">
-                        <h3 class="team-list-title">Ольга Репина</h3>
-                        <p class="team-list-text">Frontend Developer</p>
+                        <div class="team-info">
+                            <h3 class="team-list-title">Ольга Репина</h3>
+                            <p class="team-list-text">Frontend Developer</p>
+                        </div>
                     </li>
                     <li class="team-list-item">
                         <img src="./images/Nikolai_Tarasov.jpg" alt="Николай Тарасов" width="270" height="260">
-                        <h3 class="team-list-title">Николай Тарасов</h3>
-                        <p class="team-list-text">Marketing</p>
+                        <div class="team-info">
+                            <h3 class="team-list-title">Николай Тарасов</h3>
+                            <p class="team-list-text">Marketing</p>
+                        </div>
                     </li>
                     <li class="team-list-item">
                         <img src="./images/Mikhail_Ermakov.jpg" alt="Михаил Ермаков" width="270" height="260">
-                        <h3 class="team-list-title">Михаил Ермаков</h3>
-                        <p class="team-list-text">UI Designer</p>
+                        <div class="team-info">
+                            <h3 class="team-list-title">Михаил Ермаков</h3>
+                            <p class="team-list-text">UI Designer</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -111,7 +119,7 @@
     <footer class="page-footer">
         <div class="container footer-list">
             <a class="logo" href="./index.html">Web<span class="logo-footer">Studio</span></a>
-            <address>
+            <address class="addres-info">
                 <ul class="address-list">
                     <li class="address-item"><a class="address-list-map" href="http://surl.li/bkaxq" target="_blank" rel="noreferrer noopener">г. Киев,
                             пр-т Леси Украинки, 26</a></li>

@@ -24,13 +24,20 @@
   h1, h2, h3, p {
     margin: 0px 0px;
   }
+  .visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
   img {
     display: block;
     max-width: 100%;
+    height: auto;
   }
   .container {
-    width: 100%;
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -47,7 +54,7 @@
     letter-spacing: 0.03em;
   }
   .page-header {
-    border: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
   }
   /*Лого*/
   .logo {
@@ -129,7 +136,7 @@
     background-color: var(--dark-background-color);
   }
   .main-section {
-    padding: 200px 0 280px;
+    padding: 200px 0 200px;
   }
   .main-title {
     color: var(--primary-white-color);
@@ -216,8 +223,12 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
   }
+  .team-info {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   .team-list-title {
-    margin: 30px auto 10px;
+    margin-bottom: 10px;
     color: var(--title-color);
     font-weight: 500;
     font-size: 16px;
@@ -226,23 +237,21 @@
     letter-spacing: 0.03em;
   }
   .team-list-text {
-    margin-bottom: 30px;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
   }
   /*Підвал*/
-  .footer-list{
-    display: flex;
-    flex-direction: column;
-    padding: 60px 15px;
+  .page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
-  .address-list {
-    padding: 20px 0px 0px;
+  .addres-info {
+    margin-top: 20px;
   }
   .address-item:not(:first-child) {
-    padding-top: 9px;
+    margin-top: 9px;
   }
   .address-list-map {
     color: var(--primary-white-color);
@@ -277,9 +286,7 @@
   .filters {
     display: flex;
     justify-content: center;
-  }
-  .filters-item {
-    margin-bottom: 34px;
+    margin-bottom: 50px;
   }
   .filters-item:not(:last-child) {
     margin-right: 8px;
